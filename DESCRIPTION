@@ -1,0 +1,10 @@
+Name: sperimentazioni
+Version: 0.0.1
+Date: 03-07-2020
+Author: Jacopo Carotenuto
+Maintainer: Jacopo Carotenuto
+Title: Sperimentazioni
+Description: Varie funzioni per un corso di Sperimentazioni di Fisica universitario
+Categories: Varie
+Depends: octave (>= 4.2.0)
+License: GPLv3+, simplified BSD

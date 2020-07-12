@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sperimentazioni &#8212; Sperimentazioni  documentazione</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="Indice" href="genindex.html" />
+    <link rel="search" title="Cerca" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="sperimentazioni">
+<h1>Sperimentazioni<a class="headerlink" href="#sperimentazioni" title="Link a questa intestazione">¶</a></h1>
+<p>Questa libreria vuole fornire a studenti che frequentino corsi di Sperimentazioni di Fisica o che ne abbiano bisogno, delle funzioni comprensibili e utili per alleggerire il già pesante carico di studi.</p>
+<div class="section" id="tabella-dei-contenuti">
+<h2>Tabella dei contenuti<a class="headerlink" href="#tabella-dei-contenuti" title="Link a questa intestazione">¶</a></h2>
+<ol class="simple">
+<li><p><a class="reference external" href="#funzioni-comprese">Funzioni Comprese</a></p></li>
+</ol>
+</div>
+<div class="section" id="funzioni-comprese">
+<h2>Funzioni comprese<a class="headerlink" href="#funzioni-comprese" title="Link a questa intestazione">¶</a></h2>
+<p>Questa libreria contiene le seguenti funzioni:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="#compatibility">Compatibilità</a></p></li>
+<li><p><a class="reference external" href="#interpolazione-lineare">Interpolazione Lineare</a></p></li>
+<li><p><a class="reference external" href="#chi-quadro">Chi Quadro</a></p></li>
+<li><p><a class="reference external" href="#plotta-residui">Grafico Dei Residui</a></p></li>
+<li><p><a class="reference external" href="#media-pesata">Media Pesata</a></p></li>
+</ul>
+<div class="section" id="compatibility">
+<h3>Compatibility<a class="headerlink" href="#compatibility" title="Link a questa intestazione">¶</a></h3>
+<p>La funzione Compatibility calcola la compatibilità e ne restituisce il valore o l”eventuale matrice di Compatibilità. Si utilizza in questo modo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">Compatibility</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">,</span><span class="n">sigmax</span><span class="p">,</span><span class="n">sigmay</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>La funzione richiede che gli input siano vettori colonna. La formula usata è: $$ \lambda = \frac{|X - Y|}{\sqrt{sigmax^2 + sigmay^2}} $$</p>
+</div>
+<div class="section" id="interpolazione-lineare">
+<h3>Interpolazione Lineare<a class="headerlink" href="#interpolazione-lineare" title="Link a questa intestazione">¶</a></h3>
+</div>
+<div class="section" id="chi-quadro">
+<h3>Chi Quadro<a class="headerlink" href="#chi-quadro" title="Link a questa intestazione">¶</a></h3>
+<p>La funzione Chi Quadro calcola il Chi Quadro con il metodo più generale possibile e ne resituisce il valore. Si utilizza in questo modo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ChiQuadro</span><span class="p">(</span><span class="n">Osservati</span><span class="p">,</span> <span class="n">Attesi</span><span class="p">,</span> <span class="n">sigmaOsservati</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Il valore viene calcolato con questa formula: $$ \chi^{(2)} = \left(\frac{Osservati - Attesi}{sigmaOsservati}\right)^2 $$</p>
+</div>
+<div class="section" id="plotta-residui">
+<h3>Plotta Residui<a class="headerlink" href="#plotta-residui" title="Link a questa intestazione">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Sperimentazioni</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigazione</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Ricerca veloce</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Vai" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Jacopo Carotenuto.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/Documentation.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
